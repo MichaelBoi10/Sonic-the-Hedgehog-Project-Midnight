@@ -1,0 +1,1297 @@
+; --------------------------------------------------------------------------------
+; Dynamic Pattern Loading Cues - output from ClownMapEd - Sonic 1 format
+; --------------------------------------------------------------------------------
+
+CME_6680E2B9:
+	dc.w	CME_6680E2B9_0-CME_6680E2B9
+	dc.w	CME_6680E2B9_1-CME_6680E2B9
+	dc.w	CME_6680E2B9_2-CME_6680E2B9
+	dc.w	CME_6680E2B9_3-CME_6680E2B9
+	dc.w	CME_6680E2B9_4-CME_6680E2B9
+	dc.w	CME_6680E2B9_5-CME_6680E2B9
+	dc.w	CME_6680E2B9_6-CME_6680E2B9
+	dc.w	CME_6680E2B9_7-CME_6680E2B9
+	dc.w	CME_6680E2B9_8-CME_6680E2B9
+	dc.w	CME_6680E2B9_9-CME_6680E2B9
+	dc.w	CME_6680E2B9_A-CME_6680E2B9
+	dc.w	CME_6680E2B9_B-CME_6680E2B9
+	dc.w	CME_6680E2B9_C-CME_6680E2B9
+	dc.w	CME_6680E2B9_D-CME_6680E2B9
+	dc.w	CME_6680E2B9_E-CME_6680E2B9
+	dc.w	CME_6680E2B9_F-CME_6680E2B9
+	dc.w	CME_6680E2B9_10-CME_6680E2B9
+	dc.w	CME_6680E2B9_11-CME_6680E2B9
+	dc.w	CME_6680E2B9_12-CME_6680E2B9
+	dc.w	CME_6680E2B9_13-CME_6680E2B9
+	dc.w	CME_6680E2B9_14-CME_6680E2B9
+	dc.w	CME_6680E2B9_15-CME_6680E2B9
+	dc.w	CME_6680E2B9_16-CME_6680E2B9
+	dc.w	CME_6680E2B9_17-CME_6680E2B9
+	dc.w	CME_6680E2B9_18-CME_6680E2B9
+	dc.w	CME_6680E2B9_19-CME_6680E2B9
+	dc.w	CME_6680E2B9_1A-CME_6680E2B9
+	dc.w	CME_6680E2B9_1B-CME_6680E2B9
+	dc.w	CME_6680E2B9_1C-CME_6680E2B9
+	dc.w	CME_6680E2B9_1D-CME_6680E2B9
+	dc.w	CME_6680E2B9_1E-CME_6680E2B9
+	dc.w	CME_6680E2B9_1F-CME_6680E2B9
+	dc.w	CME_6680E2B9_20-CME_6680E2B9
+	dc.w	CME_6680E2B9_21-CME_6680E2B9
+	dc.w	CME_6680E2B9_22-CME_6680E2B9
+	dc.w	CME_6680E2B9_23-CME_6680E2B9
+	dc.w	CME_6680E2B9_24-CME_6680E2B9
+	dc.w	CME_6680E2B9_25-CME_6680E2B9
+	dc.w	CME_6680E2B9_26-CME_6680E2B9
+	dc.w	CME_6680E2B9_27-CME_6680E2B9
+	dc.w	CME_6680E2B9_28-CME_6680E2B9
+	dc.w	CME_6680E2B9_29-CME_6680E2B9
+	dc.w	CME_6680E2B9_2A-CME_6680E2B9
+	dc.w	CME_6680E2B9_2B-CME_6680E2B9
+	dc.w	CME_6680E2B9_2C-CME_6680E2B9
+	dc.w	CME_6680E2B9_2D-CME_6680E2B9
+	dc.w	CME_6680E2B9_2E-CME_6680E2B9
+	dc.w	CME_6680E2B9_2F-CME_6680E2B9
+	dc.w	CME_6680E2B9_30-CME_6680E2B9
+	dc.w	CME_6680E2B9_31-CME_6680E2B9
+	dc.w	CME_6680E2B9_32-CME_6680E2B9
+	dc.w	CME_6680E2B9_33-CME_6680E2B9
+	dc.w	CME_6680E2B9_34-CME_6680E2B9
+	dc.w	CME_6680E2B9_35-CME_6680E2B9
+	dc.w	CME_6680E2B9_36-CME_6680E2B9
+	dc.w	CME_6680E2B9_37-CME_6680E2B9
+	dc.w	CME_6680E2B9_38-CME_6680E2B9
+	dc.w	CME_6680E2B9_39-CME_6680E2B9
+	dc.w	CME_6680E2B9_3A-CME_6680E2B9
+	dc.w	CME_6680E2B9_3B-CME_6680E2B9
+	dc.w	CME_6680E2B9_3C-CME_6680E2B9
+	dc.w	CME_6680E2B9_3D-CME_6680E2B9
+	dc.w	CME_6680E2B9_3E-CME_6680E2B9
+	dc.w	CME_6680E2B9_3F-CME_6680E2B9
+	dc.w	CME_6680E2B9_40-CME_6680E2B9
+	dc.w	CME_6680E2B9_41-CME_6680E2B9
+	dc.w	CME_6680E2B9_42-CME_6680E2B9
+	dc.w	CME_6680E2B9_43-CME_6680E2B9
+	dc.w	CME_6680E2B9_44-CME_6680E2B9
+	dc.w	CME_6680E2B9_45-CME_6680E2B9
+	dc.w	CME_6680E2B9_46-CME_6680E2B9
+	dc.w	CME_6680E2B9_47-CME_6680E2B9
+	dc.w	CME_6680E2B9_48-CME_6680E2B9
+	dc.w	CME_6680E2B9_49-CME_6680E2B9
+	dc.w	CME_6680E2B9_4A-CME_6680E2B9
+	dc.w	CME_6680E2B9_4B-CME_6680E2B9
+	dc.w	CME_6680E2B9_4C-CME_6680E2B9
+	dc.w	CME_6680E2B9_4D-CME_6680E2B9
+	dc.w	CME_6680E2B9_4E-CME_6680E2B9
+	dc.w	CME_6680E2B9_4F-CME_6680E2B9
+	dc.w	CME_6680E2B9_50-CME_6680E2B9
+	dc.w	CME_6680E2B9_51-CME_6680E2B9
+	dc.w	CME_6680E2B9_52-CME_6680E2B9
+	dc.w	CME_6680E2B9_53-CME_6680E2B9
+	dc.w	CME_6680E2B9_54-CME_6680E2B9
+	dc.w	CME_6680E2B9_55-CME_6680E2B9
+	dc.w	CME_6680E2B9_56-CME_6680E2B9
+	dc.w	CME_6680E2B9_57-CME_6680E2B9
+	dc.w	CME_6680E2B9_58-CME_6680E2B9
+	dc.w	CME_6680E2B9_59-CME_6680E2B9
+	dc.w	CME_6680E2B9_5A-CME_6680E2B9
+	dc.w	CME_6680E2B9_5B-CME_6680E2B9
+	dc.w	CME_6680E2B9_5C-CME_6680E2B9
+	dc.w	CME_6680E2B9_5D-CME_6680E2B9
+	dc.w	CME_6680E2B9_5E-CME_6680E2B9
+	dc.w	CME_6680E2B9_5F-CME_6680E2B9
+	dc.w	CME_6680E2B9_60-CME_6680E2B9
+	dc.w	CME_6680E2B9_61-CME_6680E2B9
+	dc.w	CME_6680E2B9_62-CME_6680E2B9
+	dc.w	CME_6680E2B9_63-CME_6680E2B9
+	dc.w	CME_6680E2B9_64-CME_6680E2B9
+	dc.w	CME_6680E2B9_65-CME_6680E2B9
+	dc.w	CME_6680E2B9_66-CME_6680E2B9
+	dc.w	CME_6680E2B9_67-CME_6680E2B9
+	dc.w	CME_6680E2B9_68-CME_6680E2B9
+	dc.w	CME_6680E2B9_69-CME_6680E2B9
+	dc.w	CME_6680E2B9_6A-CME_6680E2B9
+	dc.w	CME_6680E2B9_6B-CME_6680E2B9
+	dc.w	CME_6680E2B9_6C-CME_6680E2B9
+	dc.w	CME_6680E2B9_6D-CME_6680E2B9
+	dc.w	CME_6680E2B9_6E-CME_6680E2B9
+	dc.w	CME_6680E2B9_6F-CME_6680E2B9
+	dc.w	CME_6680E2B9_70-CME_6680E2B9
+	dc.w	CME_6680E2B9_71-CME_6680E2B9
+	dc.w	CME_6680E2B9_72-CME_6680E2B9
+	dc.w	CME_6680E2B9_73-CME_6680E2B9
+	dc.w	CME_6680E2B9_74-CME_6680E2B9
+	dc.w	CME_6680E2B9_75-CME_6680E2B9
+	dc.w	CME_6680E2B9_76-CME_6680E2B9
+	dc.w	CME_6680E2B9_77-CME_6680E2B9
+	dc.w	CME_6680E2B9_78-CME_6680E2B9
+	dc.w	CME_6680E2B9_79-CME_6680E2B9
+	dc.w	CME_6680E2B9_7A-CME_6680E2B9
+	dc.w	CME_6680E2B9_7B-CME_6680E2B9
+	dc.w	CME_6680E2B9_7C-CME_6680E2B9
+	dc.w	CME_6680E2B9_7D-CME_6680E2B9
+	dc.w	CME_6680E2B9_7E-CME_6680E2B9
+	dc.w	CME_6680E2B9_7F-CME_6680E2B9
+	dc.w	CME_6680E2B9_80-CME_6680E2B9
+	dc.w	CME_6680E2B9_81-CME_6680E2B9
+	dc.w	CME_6680E2B9_82-CME_6680E2B9
+	dc.w	CME_6680E2B9_83-CME_6680E2B9
+	dc.w	CME_6680E2B9_84-CME_6680E2B9
+	dc.w	CME_6680E2B9_85-CME_6680E2B9
+	dc.w	CME_6680E2B9_86-CME_6680E2B9
+	dc.w	CME_6680E2B9_87-CME_6680E2B9
+	dc.w	CME_6680E2B9_88-CME_6680E2B9
+	dc.w	CME_6680E2B9_89-CME_6680E2B9
+	dc.w	CME_6680E2B9_8A-CME_6680E2B9
+	dc.w	CME_6680E2B9_8B-CME_6680E2B9
+	dc.w	CME_6680E2B9_8C-CME_6680E2B9
+	dc.w	CME_6680E2B9_8D-CME_6680E2B9
+	dc.w	CME_6680E2B9_8E-CME_6680E2B9
+	dc.w	CME_6680E2B9_8F-CME_6680E2B9
+	dc.w	CME_6680E2B9_90-CME_6680E2B9
+	dc.w	CME_6680E2B9_91-CME_6680E2B9
+	dc.w	CME_6680E2B9_92-CME_6680E2B9
+	dc.w	CME_6680E2B9_93-CME_6680E2B9
+	dc.w	CME_6680E2B9_94-CME_6680E2B9
+	dc.w	CME_6680E2B9_95-CME_6680E2B9
+	dc.w	CME_6680E2B9_96-CME_6680E2B9
+	dc.w	CME_6680E2B9_97-CME_6680E2B9
+	dc.w	CME_6680E2B9_98-CME_6680E2B9
+	dc.w	CME_6680E2B9_99-CME_6680E2B9
+	dc.w	CME_6680E2B9_9A-CME_6680E2B9
+	dc.w	CME_6680E2B9_9B-CME_6680E2B9
+	dc.w	CME_6680E2B9_9C-CME_6680E2B9
+	dc.w	CME_6680E2B9_9D-CME_6680E2B9
+	dc.w	CME_6680E2B9_9E-CME_6680E2B9
+	dc.w	CME_6680E2B9_9F-CME_6680E2B9
+	dc.w	CME_6680E2B9_A0-CME_6680E2B9
+	dc.w	CME_6680E2B9_A1-CME_6680E2B9
+	dc.w	CME_6680E2B9_A2-CME_6680E2B9
+	dc.w	CME_6680E2B9_A3-CME_6680E2B9
+	dc.w	CME_6680E2B9_A4-CME_6680E2B9
+	dc.w	CME_6680E2B9_A5-CME_6680E2B9
+	dc.w	CME_6680E2B9_A6-CME_6680E2B9
+	dc.w	CME_6680E2B9_A7-CME_6680E2B9
+	dc.w	CME_6680E2B9_A8-CME_6680E2B9
+	dc.w	CME_6680E2B9_A9-CME_6680E2B9
+	dc.w	CME_6680E2B9_AA-CME_6680E2B9
+	dc.w	CME_6680E2B9_AB-CME_6680E2B9
+	dc.w	CME_6680E2B9_AC-CME_6680E2B9
+	dc.w	CME_6680E2B9_AD-CME_6680E2B9
+	dc.w	CME_6680E2B9_AE-CME_6680E2B9
+	dc.w	CME_6680E2B9_AF-CME_6680E2B9
+	dc.w	CME_6680E2B9_B0-CME_6680E2B9
+	dc.w	CME_6680E2B9_B1-CME_6680E2B9
+	dc.w	CME_6680E2B9_B2-CME_6680E2B9
+	dc.w	CME_6680E2B9_B3-CME_6680E2B9
+	dc.w	CME_6680E2B9_B4-CME_6680E2B9
+	dc.w	CME_6680E2B9_B5-CME_6680E2B9
+	dc.w	CME_6680E2B9_B6-CME_6680E2B9
+	dc.w	CME_6680E2B9_B7-CME_6680E2B9
+	dc.w	CME_6680E2B9_B8-CME_6680E2B9
+	dc.w	CME_6680E2B9_B9-CME_6680E2B9
+	dc.w	CME_6680E2B9_BA-CME_6680E2B9
+	dc.w	CME_6680E2B9_BB-CME_6680E2B9
+	dc.w	CME_6680E2B9_BC-CME_6680E2B9
+	dc.w	CME_6680E2B9_BD-CME_6680E2B9
+	dc.w	CME_6680E2B9_BE-CME_6680E2B9
+	dc.w	CME_6680E2B9_BF-CME_6680E2B9
+	dc.w	CME_6680E2B9_C0-CME_6680E2B9
+	dc.w	CME_6680E2B9_C1-CME_6680E2B9
+	dc.w	CME_6680E2B9_C2-CME_6680E2B9
+	dc.w	CME_6680E2B9_C3-CME_6680E2B9
+	dc.w	CME_6680E2B9_C4-CME_6680E2B9
+	dc.w	CME_6680E2B9_C5-CME_6680E2B9
+	dc.w	CME_6680E2B9_C6-CME_6680E2B9
+	dc.w	CME_6680E2B9_C7-CME_6680E2B9
+	dc.w	CME_6680E2B9_C8-CME_6680E2B9
+	dc.w	CME_6680E2B9_C9-CME_6680E2B9
+	dc.w	CME_6680E2B9_CA-CME_6680E2B9
+	dc.w	CME_6680E2B9_CB-CME_6680E2B9
+	dc.w	CME_6680E2B9_CC-CME_6680E2B9
+	dc.w	CME_6680E2B9_CD-CME_6680E2B9
+	dc.w	CME_6680E2B9_CE-CME_6680E2B9
+	dc.w	CME_6680E2B9_CF-CME_6680E2B9
+	dc.w	CME_6680E2B9_D0-CME_6680E2B9
+	dc.w	CME_6680E2B9_D1-CME_6680E2B9
+	dc.w	CME_6680E2B9_D2-CME_6680E2B9
+	dc.w	CME_6680E2B9_D3-CME_6680E2B9
+	dc.w	CME_6680E2B9_D4-CME_6680E2B9
+	dc.w	CME_6680E2B9_D5-CME_6680E2B9
+
+CME_6680E2B9_0:
+	dc.b	0
+
+CME_6680E2B9_1:
+	dc.b	2
+	dc.w	$F000
+	dc.w	$3010
+
+CME_6680E2B9_2:
+	dc.b	2
+	dc.w	$F014
+	dc.w	$1024
+
+CME_6680E2B9_3:
+	dc.b	2
+	dc.w	$F026
+	dc.w	$1036
+
+CME_6680E2B9_4:
+	dc.b	2
+	dc.w	$3026
+	dc.w	$D02E
+
+CME_6680E2B9_5:
+	dc.b	3
+	dc.w	$3026
+	dc.w	$502E
+	dc.w	$7038
+
+CME_6680E2B9_6:
+	dc.b	3
+	dc.w	$3026
+	dc.w	$5032
+	dc.w	$7040
+
+CME_6680E2B9_7:
+	dc.b	1
+	dc.w	$D048
+
+CME_6680E2B9_8:
+	dc.b	1
+	dc.w	$F056
+
+CME_6680E2B9_9:
+	dc.b	2
+	dc.w	$B056
+	dc.w	$3066
+
+CME_6680E2B9_A:
+	dc.b	2
+	dc.w	$F06A
+	dc.w	$307A
+
+CME_6680E2B9_B:
+	dc.b	2
+	dc.w	$500E
+	dc.w	$D07E
+
+CME_6680E2B9_C:
+	dc.b	2
+	dc.w	$500E
+	dc.w	$B08C
+
+CME_6680E2B9_D:
+	dc.b	2
+	dc.w	$F098
+	dc.w	$90A8
+
+CME_6680E2B9_E:
+	dc.b	2
+	dc.w	$7098
+	dc.w	$F0B2
+
+CME_6680E2B9_F:
+	dc.b	2
+	dc.w	$F0C2
+	dc.w	$10D2
+
+CME_6680E2B9_10:
+	dc.b	2
+	dc.w	$F0D4
+	dc.w	$50E4
+
+CME_6680E2B9_11:
+	dc.b	3
+	dc.w	$50D4
+	dc.w	$F0EA
+	dc.w	$10FA
+
+CME_6680E2B9_12:
+	dc.b	2
+	dc.w	$50D4
+	dc.w	$F0FC
+
+CME_6680E2B9_13:
+	dc.b	2
+	dc.w	$70C2
+	dc.w	$910C
+
+CME_6680E2B9_14:
+	dc.b	2
+	dc.w	$7098
+	dc.w	$B116
+
+CME_6680E2B9_15:
+	dc.b	2
+	dc.w	$F122
+	dc.w	$1132
+
+CME_6680E2B9_16:
+	dc.b	2
+	dc.w	$5122
+	dc.w	$F134
+
+CME_6680E2B9_17:
+	dc.b	2
+	dc.w	$F144
+	dc.w	$1154
+
+CME_6680E2B9_18:
+	dc.b	2
+	dc.w	$F156
+	dc.w	$7166
+
+CME_6680E2B9_19:
+	dc.b	2
+	dc.w	$5156
+	dc.w	$F16E
+
+CME_6680E2B9_1A:
+	dc.b	2
+	dc.w	$5156
+	dc.w	$F17E
+
+CME_6680E2B9_1B:
+	dc.b	2
+	dc.w	$7144
+	dc.w	$918E
+
+CME_6680E2B9_1C:
+	dc.b	2
+	dc.w	$5122
+	dc.w	$D198
+
+CME_6680E2B9_1D:
+	dc.b	2
+	dc.w	$F1A6
+	dc.w	$71B6
+
+CME_6680E2B9_1E:
+	dc.b	2
+	dc.w	$71A6
+	dc.w	$F1BE
+
+CME_6680E2B9_1F:
+	dc.b	1
+	dc.w	$F1CE
+
+CME_6680E2B9_20:
+	dc.b	2
+	dc.w	$F1DE
+	dc.w	$31EE
+
+CME_6680E2B9_21:
+	dc.b	2
+	dc.w	$71DE
+	dc.w	$F1F2
+
+CME_6680E2B9_22:
+	dc.b	2
+	dc.w	$71DE
+	dc.w	$F202
+
+CME_6680E2B9_23:
+	dc.b	2
+	dc.w	$71CE
+	dc.w	$7212
+
+CME_6680E2B9_24:
+	dc.b	2
+	dc.w	$71A6
+	dc.w	$B21A
+
+CME_6680E2B9_25:
+	dc.b	2
+	dc.w	$F226
+	dc.w	$5236
+
+CME_6680E2B9_26:
+	dc.b	3
+	dc.w	$722A
+	dc.w	$F23A
+	dc.w	$324A
+
+CME_6680E2B9_27:
+	dc.b	2
+	dc.w	$F24E
+	dc.w	$525E
+
+CME_6680E2B9_28:
+	dc.b	2
+	dc.w	$F264
+	dc.w	$7274
+
+CME_6680E2B9_29:
+	dc.b	2
+	dc.w	$726C
+	dc.w	$F27A
+
+CME_6680E2B9_2A:
+	dc.b	4
+	dc.w	$726C
+	dc.w	$127A
+	dc.w	$F28A
+	dc.w	$129A
+
+CME_6680E2B9_2B:
+	dc.b	3
+	dc.w	$7256
+	dc.w	$1262
+	dc.w	$B29C
+
+CME_6680E2B9_2C:
+	dc.b	3
+	dc.w	$722A
+	dc.w	$123A
+	dc.w	$D2A8
+
+CME_6680E2B9_2D:
+	dc.b	2
+	dc.w	$F2B6
+	dc.w	$52C6
+
+CME_6680E2B9_2E:
+	dc.b	2
+	dc.w	$F2CC
+	dc.w	$52DC
+
+CME_6680E2B9_2F:
+	dc.b	2
+	dc.w	$52B6
+	dc.w	$F2E2
+
+CME_6680E2B9_30:
+	dc.b	2
+	dc.w	$52CC
+	dc.w	$F2F2
+
+CME_6680E2B9_31:
+	dc.b	2
+	dc.w	$F302
+	dc.w	$5312
+
+CME_6680E2B9_32:
+	dc.b	2
+	dc.w	$F318
+	dc.w	$5328
+
+CME_6680E2B9_33:
+	dc.b	2
+	dc.w	$5302
+	dc.w	$F32E
+
+CME_6680E2B9_34:
+	dc.b	2
+	dc.w	$7318
+	dc.w	$D33E
+
+CME_6680E2B9_35:
+	dc.b	2
+	dc.w	$F34C
+	dc.w	$335C
+
+CME_6680E2B9_36:
+	dc.b	2
+	dc.w	$F360
+	dc.w	$3370
+
+CME_6680E2B9_37:
+	dc.b	2
+	dc.w	$734C
+	dc.w	$B374
+
+CME_6680E2B9_38:
+	dc.b	2
+	dc.w	$7360
+	dc.w	$B380
+
+CME_6680E2B9_39:
+	dc.b	2
+	dc.w	$F38C
+	dc.w	$539C
+
+CME_6680E2B9_3A:
+	dc.b	2
+	dc.w	$F3A2
+	dc.w	$33B2
+
+CME_6680E2B9_3B:
+	dc.b	3
+	dc.w	$738E
+	dc.w	$13B6
+	dc.w	$B3C0
+
+CME_6680E2B9_3C:
+	dc.b	2
+	dc.w	$73A2
+	dc.w	$B3CC
+
+CME_6680E2B9_3D:
+	dc.b	1
+	dc.w	$F400
+
+CME_6680E2B9_3E:
+	dc.b	1
+	dc.w	$F410
+
+CME_6680E2B9_3F:
+	dc.b	1
+	dc.w	$F420
+
+CME_6680E2B9_40:
+	dc.b	1
+	dc.w	$F430
+
+CME_6680E2B9_41:
+	dc.b	1
+	dc.w	$F440
+
+CME_6680E2B9_42:
+	dc.b	1
+	dc.w	$F450
+
+CME_6680E2B9_43:
+	dc.b	1
+	dc.w	$F460
+
+CME_6680E2B9_44:
+	dc.b	1
+	dc.w	$F470
+
+CME_6680E2B9_45:
+	dc.b	1
+	dc.w	$F480
+
+CME_6680E2B9_46:
+	dc.b	1
+	dc.w	$F490
+
+CME_6680E2B9_47:
+	dc.b	1
+	dc.w	$F4A0
+
+CME_6680E2B9_48:
+	dc.b	2
+	dc.w	$F3D8
+	dc.w	$33E8
+
+CME_6680E2B9_49:
+	dc.b	2
+	dc.w	$53D8
+	dc.w	$B3EC
+
+CME_6680E2B9_4A:
+	dc.b	2
+	dc.w	$73B8
+	dc.w	$B3D8
+
+CME_6680E2B9_4B:
+	dc.b	3
+	dc.w	$53D8
+	dc.w	$53EC
+	dc.w	$54B0
+
+CME_6680E2B9_4C:
+	dc.b	1
+	dc.w	$B4B6
+
+CME_6680E2B9_4D:
+	dc.b	1
+	dc.w	$F4C2
+
+CME_6680E2B9_4E:
+	dc.b	2
+	dc.w	$F4D2
+	dc.w	$14E2
+
+CME_6680E2B9_4F:
+	dc.b	2
+	dc.w	$F4E4
+	dc.w	$34F4
+
+CME_6680E2B9_50:
+	dc.b	2
+	dc.w	$F4F8
+	dc.w	$5508
+
+CME_6680E2B9_51:
+	dc.b	2
+	dc.w	$F50E
+	dc.w	$551E
+
+CME_6680E2B9_52:
+	dc.b	2
+	dc.w	$F524
+	dc.w	$1534
+
+CME_6680E2B9_53:
+	dc.b	2
+	dc.w	$F536
+	dc.w	$1546
+
+CME_6680E2B9_54:
+	dc.b	2
+	dc.w	$F548
+	dc.w	$1558
+
+CME_6680E2B9_55:
+	dc.b	1
+	dc.w	$955A
+
+CME_6680E2B9_56:
+	dc.b	2
+	dc.w	$F548
+	dc.w	$1558
+
+CME_6680E2B9_57:
+	dc.b	1
+	dc.w	$F564
+
+CME_6680E2B9_58:
+	dc.b	1
+	dc.w	$F564
+
+CME_6680E2B9_59:
+	dc.b	2
+	dc.w	$F574
+	dc.w	$1584
+
+CME_6680E2B9_5A:
+	dc.b	2
+	dc.w	$F586
+	dc.w	$7596
+
+CME_6680E2B9_5B:
+	dc.b	1
+	dc.w	$F59E
+
+CME_6680E2B9_5C:
+	dc.b	2
+	dc.w	$F5AE
+	dc.w	$75BE
+
+CME_6680E2B9_5D:
+	dc.b	3
+	dc.w	$15AE
+	dc.w	$F5BC
+	dc.w	$55CC
+
+CME_6680E2B9_5E:
+	dc.b	2
+	dc.w	$F5D2
+	dc.w	$55E2
+
+CME_6680E2B9_5F:
+	dc.b	2
+	dc.w	$F5E8
+	dc.w	$35F8
+
+CME_6680E2B9_60:
+	dc.b	2
+	dc.w	$F5FC
+	dc.w	$160C
+
+CME_6680E2B9_61:
+	dc.b	1
+	dc.w	$D60E
+
+CME_6680E2B9_62:
+	dc.b	1
+	dc.w	$F61C
+
+CME_6680E2B9_63:
+	dc.b	1
+	dc.w	$D62C
+
+CME_6680E2B9_64:
+	dc.b	1
+	dc.w	$F63A
+
+CME_6680E2B9_65:
+	dc.b	2
+	dc.w	$F64A
+	dc.w	$565A
+
+CME_6680E2B9_66:
+	dc.b	2
+	dc.w	$F660
+	dc.w	$1670
+
+CME_6680E2B9_67:
+	dc.b	1
+	dc.w	$D672
+
+CME_6680E2B9_68:
+	dc.b	1
+	dc.w	$D680
+
+CME_6680E2B9_69:
+	dc.b	2
+	dc.w	$F68E
+	dc.w	$169E
+
+CME_6680E2B9_6A:
+	dc.b	2
+	dc.w	$F6A0
+	dc.w	$36B0
+
+CME_6680E2B9_6B:
+	dc.b	2
+	dc.w	$F6B4
+	dc.w	$16C4
+
+CME_6680E2B9_6C:
+	dc.b	2
+	dc.w	$36BC
+	dc.w	$D6C6
+
+CME_6680E2B9_6D:
+	dc.b	1
+	dc.w	$B7D6
+
+CME_6680E2B9_6E:
+	dc.b	2
+	dc.w	$F7E2
+	dc.w	$37F2
+
+CME_6680E2B9_6F:
+	dc.b	3
+	dc.w	$87F6
+	dc.w	$8800
+	dc.w	$0A18
+
+CME_6680E2B9_70:
+	dc.b	2
+	dc.w	$F809
+	dc.w	$2819
+
+CME_6680E2B9_71:
+	dc.b	2
+	dc.w	$F80E
+	dc.w	$281E
+
+CME_6680E2B9_72:
+	dc.b	2
+	dc.w	$F821
+	dc.w	$1831
+
+CME_6680E2B9_73:
+	dc.b	2
+	dc.w	$F82A
+	dc.w	$183A
+
+CME_6680E2B9_74:
+	dc.b	2
+	dc.w	$882A
+	dc.w	$883C
+
+CME_6680E2B9_75:
+	dc.b	3
+	dc.w	$F0A0
+	dc.w	$10B0
+	dc.w	$B6D4
+
+CME_6680E2B9_76:
+	dc.b	2
+	dc.w	$F0B2
+	dc.w	$B6D4
+
+CME_6680E2B9_77:
+	dc.b	2
+	dc.w	$90CA
+	dc.w	$B6E0
+
+CME_6680E2B9_78:
+	dc.b	2
+	dc.w	$F0DA
+	dc.w	$86EC
+
+CME_6680E2B9_79:
+	dc.b	3
+	dc.w	$F0EA
+	dc.w	$10FA
+	dc.w	$86EC
+
+CME_6680E2B9_7A:
+	dc.b	2
+	dc.w	$F0FC
+	dc.w	$86EC
+
+CME_6680E2B9_7B:
+	dc.b	2
+	dc.w	$910C
+	dc.w	$B6E0
+
+CME_6680E2B9_7C:
+	dc.b	2
+	dc.w	$B116
+	dc.w	$B6D4
+
+CME_6680E2B9_7D:
+	dc.b	2
+	dc.w	$B128
+	dc.w	$76F5
+
+CME_6680E2B9_7E:
+	dc.b	2
+	dc.w	$F134
+	dc.w	$76F5
+
+CME_6680E2B9_7F:
+	dc.b	2
+	dc.w	$914C
+	dc.w	$96FD
+
+CME_6680E2B9_80:
+	dc.b	3
+	dc.w	$F15C
+	dc.w	$116C
+	dc.w	$8707
+
+CME_6680E2B9_81:
+	dc.b	2
+	dc.w	$F16E
+	dc.w	$8707
+
+CME_6680E2B9_82:
+	dc.b	2
+	dc.w	$F17E
+	dc.w	$8707
+
+CME_6680E2B9_83:
+	dc.b	2
+	dc.w	$918E
+	dc.w	$96FD
+
+CME_6680E2B9_84:
+	dc.b	3
+	dc.w	$8198
+	dc.w	$31A2
+	dc.w	$76F5
+
+CME_6680E2B9_85:
+	dc.b	2
+	dc.w	$F1AE
+	dc.w	$B710
+
+CME_6680E2B9_86:
+	dc.b	2
+	dc.w	$F1BE
+	dc.w	$B710
+
+CME_6680E2B9_87:
+	dc.b	2
+	dc.w	$71D6
+	dc.w	$B71C
+
+CME_6680E2B9_88:
+	dc.b	2
+	dc.w	$B1E6
+	dc.w	$8728
+
+CME_6680E2B9_89:
+	dc.b	2
+	dc.w	$F1F2
+	dc.w	$8728
+
+CME_6680E2B9_8A:
+	dc.b	2
+	dc.w	$F202
+	dc.w	$8728
+
+CME_6680E2B9_8B:
+	dc.b	2
+	dc.w	$7212
+	dc.w	$B71C
+
+CME_6680E2B9_8C:
+	dc.b	2
+	dc.w	$B21A
+	dc.w	$B710
+
+CME_6680E2B9_8D:
+	dc.b	3
+	dc.w	$3226
+	dc.w	$7232
+	dc.w	$8731
+
+CME_6680E2B9_8E:
+	dc.b	3
+	dc.w	$F23C
+	dc.w	$124C
+	dc.w	$8731
+
+CME_6680E2B9_8F:
+	dc.b	3
+	dc.w	$724E
+	dc.w	$325E
+	dc.w	$973A
+
+CME_6680E2B9_90:
+	dc.b	3
+	dc.w	$7264
+	dc.w	$5274
+	dc.w	$C744
+
+CME_6680E2B9_91:
+	dc.b	2
+	dc.w	$D27C
+	dc.w	$C744
+
+CME_6680E2B9_92:
+	dc.b	3
+	dc.w	$F28A
+	dc.w	$129A
+	dc.w	$C744
+
+CME_6680E2B9_93:
+	dc.b	2
+	dc.w	$B29C
+	dc.w	$973A
+
+CME_6680E2B9_94:
+	dc.b	2
+	dc.w	$D2A8
+	dc.w	$8731
+
+CME_6680E2B9_95:
+	dc.b	3
+	dc.w	$F0A0
+	dc.w	$10B0
+	dc.w	$B751
+
+CME_6680E2B9_96:
+	dc.b	2
+	dc.w	$F0B2
+	dc.w	$B751
+
+CME_6680E2B9_97:
+	dc.b	2
+	dc.w	$90CA
+	dc.w	$B75D
+
+CME_6680E2B9_98:
+	dc.b	2
+	dc.w	$F0DA
+	dc.w	$8769
+
+CME_6680E2B9_99:
+	dc.b	3
+	dc.w	$F0EA
+	dc.w	$10FA
+	dc.w	$8769
+
+CME_6680E2B9_9A:
+	dc.b	2
+	dc.w	$F0FC
+	dc.w	$8769
+
+CME_6680E2B9_9B:
+	dc.b	2
+	dc.w	$910C
+	dc.w	$B75D
+
+CME_6680E2B9_9C:
+	dc.b	2
+	dc.w	$B116
+	dc.w	$B751
+
+CME_6680E2B9_9D:
+	dc.b	2
+	dc.w	$B128
+	dc.w	$9772
+
+CME_6680E2B9_9E:
+	dc.b	2
+	dc.w	$F134
+	dc.w	$9772
+
+CME_6680E2B9_9F:
+	dc.b	2
+	dc.w	$914C
+	dc.w	$977C
+
+CME_6680E2B9_A0:
+	dc.b	3
+	dc.w	$F15C
+	dc.w	$116C
+	dc.w	$9786
+
+CME_6680E2B9_A1:
+	dc.b	2
+	dc.w	$F16E
+	dc.w	$9786
+
+CME_6680E2B9_A2:
+	dc.b	2
+	dc.w	$F17E
+	dc.w	$9786
+
+CME_6680E2B9_A3:
+	dc.b	2
+	dc.w	$918E
+	dc.w	$977C
+
+CME_6680E2B9_A4:
+	dc.b	2
+	dc.w	$D198
+	dc.w	$9772
+
+CME_6680E2B9_A5:
+	dc.b	2
+	dc.w	$F1AE
+	dc.w	$B790
+
+CME_6680E2B9_A6:
+	dc.b	2
+	dc.w	$F1BE
+	dc.w	$B790
+
+CME_6680E2B9_A7:
+	dc.b	2
+	dc.w	$71D6
+	dc.w	$B79C
+
+CME_6680E2B9_A8:
+	dc.b	2
+	dc.w	$B1E6
+	dc.w	$87A8
+
+CME_6680E2B9_A9:
+	dc.b	2
+	dc.w	$F1F2
+	dc.w	$87A8
+
+CME_6680E2B9_AA:
+	dc.b	2
+	dc.w	$F202
+	dc.w	$87A8
+
+CME_6680E2B9_AB:
+	dc.b	2
+	dc.w	$7212
+	dc.w	$B79C
+
+CME_6680E2B9_AC:
+	dc.b	2
+	dc.w	$B21A
+	dc.w	$B790
+
+CME_6680E2B9_AD:
+	dc.b	3
+	dc.w	$3226
+	dc.w	$7232
+	dc.w	$C7B1
+
+CME_6680E2B9_AE:
+	dc.b	3
+	dc.w	$F23C
+	dc.w	$124C
+	dc.w	$C7B1
+
+CME_6680E2B9_AF:
+	dc.b	3
+	dc.w	$724E
+	dc.w	$325E
+	dc.w	$A7BE
+
+CME_6680E2B9_B0:
+	dc.b	3
+	dc.w	$7264
+	dc.w	$5274
+	dc.w	$C7C9
+
+CME_6680E2B9_B1:
+	dc.b	2
+	dc.w	$D27C
+	dc.w	$C7C9
+
+CME_6680E2B9_B2:
+	dc.b	3
+	dc.w	$F28A
+	dc.w	$129A
+	dc.w	$C7C9
+
+CME_6680E2B9_B3:
+	dc.b	2
+	dc.w	$B29C
+	dc.w	$A7BE
+
+CME_6680E2B9_B4:
+	dc.b	3
+	dc.w	$D2A8
+	dc.w	$17B2
+	dc.w	$87B5
+
+CME_6680E2B9_B5:
+	dc.b	1
+	dc.w	$D845
+
+CME_6680E2B9_B6:
+	dc.b	2
+	dc.w	$F853
+	dc.w	$2863
+
+CME_6680E2B9_B7:
+	dc.b	1
+	dc.w	$D866
+
+CME_6680E2B9_B8:
+	dc.b	2
+	dc.w	$F874
+	dc.w	$1884
+
+CME_6680E2B9_B9:
+	dc.b	2
+	dc.w	$3849
+	dc.w	$C886
+
+CME_6680E2B9_BA:
+	dc.b	2
+	dc.w	$2861
+	dc.w	$E893
+
+CME_6680E2B9_BB:
+	dc.b	2
+	dc.w	$3869
+	dc.w	$C8A2
+
+CME_6680E2B9_BC:
+	dc.b	3
+	dc.w	$2874
+	dc.w	$0885
+	dc.w	$D8AF
+
+CME_6680E2B9_BD:
+	dc.b	2
+	dc.w	$F8BD
+	dc.w	$58CD
+
+CME_6680E2B9_BE:
+	dc.b	3
+	dc.w	$38C7
+	dc.w	$F8D3
+	dc.w	$18E3
+
+CME_6680E2B9_BF:
+	dc.b	2
+	dc.w	$D8BD
+	dc.w	$78E5
+
+CME_6680E2B9_C0:
+	dc.b	3
+	dc.w	$38C7
+	dc.w	$98D3
+	dc.w	$78ED
+
+CME_6680E2B9_C1:
+	dc.b	1
+	dc.w	$E8F5
+
+CME_6680E2B9_C2:
+	dc.b	1
+	dc.w	$F904
+
+CME_6680E2B9_C3:
+	dc.b	2
+	dc.w	$8833
+	dc.w	$690D
+
+CME_6680E2B9_C4:
+	dc.b	2
+	dc.w	$883C
+	dc.w	$690D
+
+CME_6680E2B9_C5:
+	dc.b	2
+	dc.w	$B904
+	dc.w	$3914
+
+CME_6680E2B9_C6:
+	dc.b	3
+	dc.w	$8833
+	dc.w	$290D
+	dc.w	$3914
+
+CME_6680E2B9_C7:
+	dc.b	3
+	dc.w	$883C
+	dc.w	$290D
+	dc.w	$3914
+
+CME_6680E2B9_C8:
+	dc.b	2
+	dc.w	$F918
+	dc.w	$3928
+
+CME_6680E2B9_C9:
+	dc.b	2
+	dc.w	$F928
+	dc.w	$3938
+
+CME_6680E2B9_CA:
+	dc.b	2
+	dc.w	$3928
+	dc.w	$F93C
+
+CME_6680E2B9_CB:
+	dc.b	4
+	dc.w	$1924
+	dc.w	$3928
+	dc.w	$193A
+	dc.w	$D94C
+
+CME_6680E2B9_CC:
+	dc.b	2
+	dc.w	$F95A
+	dc.w	$796A
+
+CME_6680E2B9_CD:
+	dc.b	3
+	dc.w	$5962
+	dc.w	$F972
+	dc.w	$1982
+
+CME_6680E2B9_CE:
+	dc.b	3
+	dc.w	$5962
+	dc.w	$F984
+	dc.w	$3994
+
+CME_6680E2B9_CF:
+	dc.b	2
+	dc.w	$F998
+	dc.w	$39A8
+
+CME_6680E2B9_D0:
+	dc.b	2
+	dc.w	$F9AC
+	dc.w	$39BC
+
+CME_6680E2B9_D1:
+	dc.b	2
+	dc.w	$F9BC
+	dc.w	$39CC
+
+CME_6680E2B9_D2:
+	dc.b	2
+	dc.w	$F9D0
+	dc.w	$59E0
+
+CME_6680E2B9_D3:
+	dc.b	2
+	dc.w	$F9E0
+	dc.w	$59F0
+
+CME_6680E2B9_D4:
+	dc.b	2
+	dc.w	$59E0
+	dc.w	$F9F6
+
+CME_6680E2B9_D5:
+	dc.b	2
+	dc.w	$FA06
+	dc.w	$1A16
+
+	even
