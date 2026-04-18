@@ -132,7 +132,7 @@ SoundBF:	include "sound/sfx/SndBF - Get Continue.asm"
 	even
 SoundC0:	include "sound/sfx/SndC0 - Basaran Flap.asm"
 	even
-SoundC1:	include "sound/sfx/SndC1 - Break Item.asm"
+SoundC1:	include "sound/sfx/Snd96_Destroy.asm"
 	even
 SoundC2:	include "sound/sfx/SndC2 - Drown Warning.asm"
 	even

@@ -53,6 +53,7 @@ PLC_Main:	dc.w ((PLC_Mainend-PLC_Main-2)/6)-1
 		plcm	Nem_Hud,    ArtTile_HUD           ; HUD
 		plcm	Nem_Lives,  ArtTile_Lives_Counter ; lives counter
 		plcm	Nem_Ring,   ArtTile_Ring          ; rings
+		plcm	Nem_Points, ArtTile_Points        ; points from enemy
 PLC_Mainend:
 ; ---------------------------------------------------------------------------
 ; Pattern load cues - standard block 2

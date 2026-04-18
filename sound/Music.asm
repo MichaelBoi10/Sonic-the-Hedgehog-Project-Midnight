@@ -36,7 +36,7 @@ Music83:			include "sound/music/Mus83 - MZ.asm"
 	even
 Music84:		include "sound/music/Mus84 - SLZ.asm"
 	even
-Music85:			include "sound/music/Mus85 - SYZ.asm"
+Music85:			include "sound/music/SSZ1.asm"
 	even
 Music86:		include "sound/music/Mus86 - SBZ.asm"
 	even

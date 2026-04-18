@@ -53,6 +53,7 @@ id_Rings:		objptr	Rings			; 25
 id_Monitor:		objptr	Monitor			; 26
 id_ExplosionItem:	objptr	ExplosionItem		; 27
 id_Animals:		objptr	Animals			; 28
+id_Points:		objptr	Points			; 29
 id_AutoDoor:		objptr	AutoDoor		; 2A
 id_Chopper:		objptr	Chopper			; 2B
 id_Jaws:		objptr	Jaws			; 2C

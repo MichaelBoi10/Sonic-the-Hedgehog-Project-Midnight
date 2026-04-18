@@ -156,7 +156,7 @@ intMacros_defined = 1
 enableInts: 
 	move	#$2300,sr
 
-disableInts: 
+disableInts:
 	move	#$2700,sr
 	endif
 ; ---------------------------------------------------------------------------

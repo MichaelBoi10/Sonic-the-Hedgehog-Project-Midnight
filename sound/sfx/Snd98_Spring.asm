@@ -4,10 +4,10 @@ Spring_Header:
 	smpsHeaderTempoSFX  $01
 	smpsHeaderChanSFX   $01
 
-	smpsHeaderSFXChannel cFM4, Spring_FM4,	$00, $07
+	smpsHeaderSFXChannel cFM6, Spring_FM6,	$00, $07
 
-; FM4 Data
-Spring_FM4:
+; FM6 Data
+Spring_FM6:
 	smpsSetvoice        $00
 	dc.b	nRst, $01
 	smpsModSet          $03, $01, $5D, $0F

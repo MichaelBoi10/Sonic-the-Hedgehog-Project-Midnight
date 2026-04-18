@@ -691,13 +691,7 @@ VBla_0A:
 		writeVRAM	v_hscrolltablebuffer,vram_hscroll
 		startZ80
 		bsr.w	PalCycle_SS
-		tst.b	(f_sonframechg).w ; has Sonic's sprite changed?
-		beq.s	.nochg		; if not, branch
-
-		writeVRAM	v_sgfx_buffer,ArtTile_Sonic*tile_size ; load new Sonic gfx
-		move.b	#0,(f_sonframechg).w
-
-.nochg:
+		jsr	ProcessDMAQueue(pc)
 		tst.w	(v_generictimer).w	; is there time left on the demo?
 		beq.w	.end	; if not, return
 		subq.w	#1,(v_generictimer).w	; subtract 1 from time left in demo
@@ -731,12 +725,7 @@ VBla_18:
 		move.w	(v_hbla_hreg).w,(a5)
 		writeVRAM	v_hscrolltablebuffer,vram_hscroll
 		writeVRAM	v_spritetablebuffer,vram_sprites
-		tst.b	(f_sonframechg).w
-		beq.s	.nochg
-		writeVRAM	v_sgfx_buffer,ArtTile_Sonic*tile_size
-		move.b	#0,(f_sonframechg).w
-
-.nochg:
+		jsr	ProcessDMAQueue(pc)
 		startZ80
 		movem.l	(v_screenposx).w,d0-d7
 		movem.l	d0-d7,(v_screenposx_dup).w
@@ -787,12 +776,7 @@ VBla_16:
 		writeVRAM	v_spritetablebuffer,vram_sprites
 		writeVRAM	v_hscrolltablebuffer,vram_hscroll
 		startZ80
-		tst.b	(f_sonframechg).w
-		beq.s	.nochg
-		writeVRAM	v_sgfx_buffer,ArtTile_Sonic*tile_size
-		move.b	#0,(f_sonframechg).w
-
-.nochg:
+		jsr	ProcessDMAQueue(pc)
 		tst.w	(v_generictimer).w
 		beq.w	.end
 		subq.w	#1,(v_generictimer).w
@@ -4939,9 +4923,11 @@ Map_MisDissolve:include	"_maps/Buzz Bomber Missile Dissolve.asm"
 		include	"_maps/Explosions.asm"
 
 		include	"_incObj/28 Animals.asm"
+		include	"_incObj/29 Points.asm"
 Map_Animal1:	include	"_maps/Animals 1.asm"
 Map_Animal2:	include	"_maps/Animals 2.asm"
 Map_Animal3:	include	"_maps/Animals 3.asm"
+Map_Poi:	include	"_maps/Points.asm"
 
 		include	"_incObj/1F Crabmeat.asm"
 		include	"_anim/Crabmeat.asm"
@@ -7805,6 +7791,8 @@ Nem_Ring:	binclude	"artnem/Rings.nem"
 Nem_Monitors:	binclude	"artnem/Monitors.nem"
 		even
 Nem_Explode:	binclude	"artnem/Explosion.nem"
+		even
+Nem_Points:	binclude	"artnem/Points.nem"	; points from destroyed enemy or object
 		even
 Nem_GameOver:	binclude	"artnem/Game Over.nem"	; game over / time over
 		even

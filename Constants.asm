@@ -442,6 +442,7 @@ ArtTile_Explosion:		equ $5A0
 ArtTile_Monitor:		equ $680
 ArtTile_HUD:			equ $6CA
 ArtTile_Sonic:			equ $780
+ArtTile_Points:			equ $6C0
 ArtTile_Lamppost:		equ $7A0
 ArtTile_Ring:			equ $7B2
 ArtTile_Lives_Counter:		equ $7D4
