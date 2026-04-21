@@ -137,12 +137,16 @@ Ring_Delete:	; Routine 8
 
 
 CollectRing:
-		addq.w	#1,(v_rings).w	; add 1 to rings
-		ori.b	#1,(f_ringcount).w ; update the rings counter
+		cmpi.w  #999,(v_rings).w    ; does Sonic have 999 or more rings?
+        bhs.s   .updaterings    ; if so, skip the increment
+        addq.w  #1,(v_rings).w    ; add 1 to rings
+        ori.b   #1,(f_ringcount).w ; update the rings counter
+		cmpi.b  #99,(v_lives).w    ; does Sonic have 99 or more lives?
+        bhs.s   .playsnd    ; if yes, branch
+.updaterings:
 		cmpi.w	#100,(v_rings).w ; do you have < 100 rings?
-		blo.s	.playsnd	; if yes, branch
-		bset	#1,(v_lifecount).w ; update lives counter
 		beq.s	.got100
+		bset	#1,(v_lifecount).w ; update lives counter
 		cmpi.w	#200,(v_rings).w ; do you have < 200 rings?
 		blo.s	.playsnd	; if yes, branch
 		bset	#2,(v_lifecount).w ; update lives counter

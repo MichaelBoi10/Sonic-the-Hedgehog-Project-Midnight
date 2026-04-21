@@ -61,6 +61,8 @@ ptr_sndCC:	SMPS_SFX_METADATA	SoundCC, $70, 0
 ptr_sndCD:	SMPS_SFX_METADATA	SoundCD, $70, 0
 ptr_sndCE:	SMPS_SFX_METADATA	SoundCE, $70, 0
 ptr_sndCF:	SMPS_SFX_METADATA	SoundCF, $70, 0
+ptr_sndD2:	SMPS_SFX_METADATA	SoundD2, $70, 0
+ptr_sndD3:	SMPS_SFX_METADATA	SoundD3, $70, 0
 ptr_sndend
 
 ; ---------------------------------------------------------------------------
@@ -161,4 +163,8 @@ SoundCD:	include "sound/sfx/SndCD - Switch.asm"
 SoundCE:	include "sound/sfx/SndCE - Ring Left Speaker.asm"
 	even
 SoundCF:	include "sound/sfx/SndCF - Signpost.asm"
+	even
+SoundD2:	include "sound/sfx/SndD2 - Peelout Charge.asm"
+	even
+SoundD3:	include "sound/sfx/SndD3 - Peelout Release.asm"
 	even

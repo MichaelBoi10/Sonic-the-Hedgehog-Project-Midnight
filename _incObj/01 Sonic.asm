@@ -247,6 +247,7 @@ Sonic_Water:
 
 ; Obj01_MdNormal:
 Sonic_MdNormal:
+		bsr.w	Sonic_Peelout
 		bsr.w	Sonic_SpinDash
 		bsr.w	Sonic_Jump
 		bsr.w	Sonic_SlopeResist
@@ -498,97 +499,91 @@ locret_1307C:
 
 ; ||||||||||||||| S U B R O U T I N E |||||||||||||||||||||||||||||||||||||||
 
-Sonic_MoveLeft:
-		move.w	obInertia(a0),d0
-		beq.s	loc_13086
-		bpl.s	loc_130B2
-
+; ||||||||||||||| S U B    R O U T    I N E |||||||||||||||||||||||||||||||||||||||
+Sonic_MoveLeft:           ; XREF: Sonic_Move
+       move.w    $14(a0),d0
+       beq.s    loc_13086
+       bpl.s    loc_130B2
 loc_13086:
-		bset	#0,obStatus(a0)
-		bne.s	loc_1309A
-		bclr	#5,obStatus(a0)
-		move.b	#id_Run,obPrevAni(a0) ; restart Sonic's animation
-
+       bset    #0,$22(a0)
+       bne.s    loc_1309A
+       bclr    #5,$22(a0)
+       move.b    #1,$1D(a0)
 loc_1309A:
-		sub.w	d5,d0
-		move.w	d6,d1
-		neg.w	d1
-		cmp.w	d1,d0
-		bgt.s	loc_130A6
-		move.w	d1,d0
-
+       sub.w    d5,d0
+       move.w    d6,d1
+       neg.w    d1
+       cmp.w    d1,d0
+       bgt.s    loc_130A6
+       add.w    d5,d0
+       cmp.w    d1,d0
+       ble.s    loc_130A6
+       move.w    d1,d0
 loc_130A6:
-		move.w	d0,obInertia(a0)
-		move.b	#id_Walk,obAnim(a0) ; use walking animation
-		rts
+       move.w    d0,obInertia(a0)
+       move.b    #id_Walk,obAnim(a0) ; use walking animation
+       rts
 ; ===========================================================================
-
 loc_130B2:
-		sub.w	d4,d0
-		bcc.s	loc_130BA
-		move.w	#-$80,d0
-
+       sub.w    d4,d0
+       bcc.s    loc_130BA
+       move.w    #-$80,d0
 loc_130BA:
-		move.w	d0,obInertia(a0)
-		move.b	obAngle(a0),d0
-		addi.b	#$20,d0
-		andi.b	#$C0,d0
-		bne.s	locret_130E8
-		cmpi.w	#$400,d0
-		blt.s	locret_130E8
-		move.b	#id_Stop,obAnim(a0) ; use "stopping" animation
-		bclr	#0,obStatus(a0)
-		move.w	#sfx_Skid,d0
-		jsr	(QueueSound2).l	; play stopping sound
-
+       move.w    d0,obInertia(a0)
+       move.b    obAngle(a0),d0
+       addi.b    #$20,d0
+       andi.b    #$C0,d0
+       bne.s    locret_130E8
+       cmpi.w    #$400,d0
+       blt.s    locret_130E8
+       move.b    #id_Stop,obAnim(a0) ; use "stopping" animation
+       bclr    #0,obStatus(a0)
+       move.w    #sfx_Skid,d0
+       jsr    (PlaySound_Special).l    ; play stopping sound
 locret_130E8:
-		rts
+       rts 
 ; End of function Sonic_MoveLeft
-
-
-; ||||||||||||||| S U B R O U T I N E |||||||||||||||||||||||||||||||||||||||
-
-
-Sonic_MoveRight:
-		move.w	obInertia(a0),d0
-		bmi.s	loc_13118
-		bclr	#0,obStatus(a0)
-		beq.s	loc_13104
-		bclr	#5,obStatus(a0)
-		move.b	#id_Run,obPrevAni(a0) ; restart Sonic's animation
-
+; ||||||||||||||| S U B    R O U T    I N E |||||||||||||||||||||||||||||||||||||||
+Sonic_MoveRight:       ; XREF: Sonic_Move
+       move.w    $14(a0),d0
+       bmi.s    loc_13118
+       bclr    #0,$22(a0)
+       beq.s    loc_13104
+       bclr    #5,$22(a0)
+       move.b    #1,$1D(a0)
 loc_13104:
-		add.w	d5,d0
-		cmp.w	d6,d0
-		blt.s	loc_1310C
-		move.w	d6,d0
-
+       add.w    d5,d0
+       cmp.w    d6,d0
+       blt.s    loc_1310C
+       sub.w    d5,d0
+       cmp.w    d6,d0
+       bge.s    loc_1310C
+       move.w    d6,d0
 loc_1310C:
-		move.w	d0,obInertia(a0)
-		move.b	#id_Walk,obAnim(a0) ; use walking animation
-		rts
+       move.w    d0,obInertia(a0)
+       move.b    #id_Walk,obAnim(a0) ; use walking animation
+       rts
 ; ===========================================================================
-
 loc_13118:
-		add.w	d4,d0
-		bcc.s	loc_13120
-		move.w	#$80,d0
-
+       add.w    d4,d0
+       bcc.s    loc_13120
+       move.w    #$80,d0
 loc_13120:
-		move.w	d0,obInertia(a0)
-		move.b	obAngle(a0),d0
-		addi.b	#$20,d0
-		andi.b	#$C0,d0
-		bne.s	locret_1314E
-		cmpi.w	#-$400,d0
-		bgt.s	locret_1314E
-		move.b	#id_Stop,obAnim(a0) ; use "stopping" animation
-		bset	#0,obStatus(a0)
-		move.w	#sfx_Skid,d0
-		jsr	(QueueSound2).l	; play stopping sound
-
+       move.w    d0,obInertia(a0)
+       move.b    obAngle(a0),d0
+       addi.b    #$20,d0
+       andi.b    #$C0,d0
+       bne.s    locret_1314E
+       cmpi.w    #-$400,d0
+       bgt.s    locret_1314E
+       move.b    #id_Stop,obAnim(a0) ; use "stopping" animation
+       bset    #0,obStatus(a0)
+       move.w    #sfx_Skid,d0
+       jsr    (PlaySound_Special).l    ; play stopping sound
+       move.b  #6,($FFFFD1E4).w    ; set the spin dash dust routine to skid dust
+       move.b  #$15,($FFFFD1DA).w
 locret_1314E:
-		rts
+       rts 
 ; End of function Sonic_MoveRight
 
 ; ---------------------------------------------------------------------------
@@ -718,77 +713,71 @@ loc_13242:
 ; End of function Sonic_RollRight
 
 ; ---------------------------------------------------------------------------
-; Subroutine to change Sonic's direction while jumping
+; Subroutine to    change Sonic's direction while jumping
 ; ---------------------------------------------------------------------------
-
-; ||||||||||||||| S U B R O U T I N E |||||||||||||||||||||||||||||||||||||||
-
-; Sonic_ChgJumpDir
+; ||||||||||||||| S U B    R O U T    I N E |||||||||||||||||||||||||||||||||||||||
 Sonic_JumpDirection:
-		move.w	(v_sonspeedmax).w,d6
-		move.w	(v_sonspeedacc).w,d5
-		asl.w	#1,d5
-		btst	#4,obStatus(a0)
-		bne.s	Obj01_ResetScr2
-		move.w	obVelX(a0),d0
-		btst	#bitL,(v_jpadhold2).w ; is left being pressed?
-		beq.s	loc_13278	; if not, branch
-		bset	#0,obStatus(a0)
-		sub.w	d5,d0
-		move.w	d6,d1
-		neg.w	d1
-		cmp.w	d1,d0
-		bgt.s	loc_13278
-		move.w	d1,d0
-
+       move.w    (v_sonspeedmax).w,d6
+       move.w    (v_sonspeedacc).w,d5
+       asl.w    #1,d5
+       btst    #4,obStatus(a0)
+       bne.s    Obj01_ResetScr2
+       move.w    obVelX(a0),d0
+       btst    #bitL,(v_jpadhold2).w ; is left being pressed?
+       beq.s    loc_13278    ; if not, branch
+       bset    #0,obStatus(a0)
+       sub.w    d5,d0
+       move.w    d6,d1
+       neg.w    d1
+       cmp.w    d1,d0
+       bgt.s    loc_13278
+       add.w    d5,d0        ; +++ remove this frame's acceleration change
+       cmp.w    d1,d0        ; +++ compare speed with top speed
+       ble.s    loc_13278    ; +++ if speed was already greater than the maximum, branch
+       move.w    d1,d0
 loc_13278:
-		btst	#bitR,(v_jpadhold2).w ; is right being pressed?
-		beq.s	Obj01_JumpMove	; if not, branch
-		bclr	#0,obStatus(a0)
-		add.w	d5,d0
-		cmp.w	d6,d0
-		blt.s	Obj01_JumpMove
-		move.w	d6,d0
-
+       btst    #bitR,(v_jpadhold2).w ; is right being pressed?
+       beq.s    Obj01_JumpMove    ; if not, branch
+       bclr    #0,obStatus(a0)
+       add.w    d5,d0
+       cmp.w    d6,d0
+       blt.s    Obj01_JumpMove
+       sub.w    d5,d0        ; +++ remove this frame's acceleration change
+       cmp.w    d6,d0        ; +++ compare speed with top speed
+       bge.s    Obj01_JumpMove    ; +++ if speed was already greater than the maximum, branch
+       move.w    d6,d0
 Obj01_JumpMove:
-		move.w	d0,obVelX(a0)	; change Sonic's horizontal speed
-
+       move.w    d0,obVelX(a0)    ; change Sonic's horizontal speed
 Obj01_ResetScr2:
-		cmpi.w	#$60,(v_lookshift).w ; is the screen in its default position?
-		beq.s	loc_132A4	; if yes, branch
-		bcc.s	loc_132A0
-		addq.w	#4,(v_lookshift).w
-
+       cmpi.w    #$60,(v_lookshift).w ; is the screen in its default position?
+       beq.s    loc_132A4    ; if yes, branch
+       bcc.s    loc_132A0
+       addq.w    #4,(v_lookshift).w
 loc_132A0:
-		subq.w	#2,(v_lookshift).w
-
+       subq.w    #2,(v_lookshift).w
 loc_132A4:
-		cmpi.w	#-$400,obVelY(a0) ; is Sonic moving faster than -$400 upwards?
-		blo.s	locret_132D2	; if yes, branch
-		move.w	obVelX(a0),d0
-		move.w	d0,d1
-		asr.w	#5,d1
-		beq.s	locret_132D2
-		bmi.s	loc_132C6
-		sub.w	d1,d0
-		bcc.s	loc_132C0
-		move.w	#0,d0
-
+       cmpi.w    #-$400,obVelY(a0) ; is Sonic moving faster than -$400 upwards?
+       bcs.s    locret_132D2    ; if yes, branch
+       move.w    obVelX(a0),d0
+       move.w    d0,d1
+       asr.w    #5,d1
+       beq.s    locret_132D2
+       bmi.s    loc_132C6
+       sub.w    d1,d0
+       bcc.s    loc_132C0
+       move.w    #0,d0
 loc_132C0:
-		move.w	d0,obVelX(a0)
-		rts
+       move.w    d0,obVelX(a0)
+       rts 
 ; ===========================================================================
-
 loc_132C6:
-		sub.w	d1,d0
-		bcs.s	loc_132CE
-		move.w	#0,d0
-
+       sub.w    d1,d0
+       bcs.s    loc_132CE
+       move.w    #0,d0
 loc_132CE:
-		move.w	d0,obVelX(a0)
-
+       move.w    d0,obVelX(a0)
 locret_132D2:
-		rts
+       rts 
 ; End of function Sonic_JumpDirection
 
 ; ===========================================================================
@@ -1758,6 +1747,9 @@ Sonic_Animate:
 		neg.w	d2		; modulus speed
 
 .nomodspeed:
+		lea	(SonAni_Figure8).l,a1			; use figure-8 running animation
+		cmpi.w	#$A00,d2				; is Sonic at running REALLY fast?
+		bhs.s	.running				; if yes, branch
 		lea	(SonAni_Run).l,a1 ; use running animation
 		cmpi.w	#$600,d2	; is Sonic at running speed?
 		bhs.s	.running	; if yes, branch
@@ -1860,6 +1852,66 @@ Sonic_LoadGfx:
 .end:
 		rts						; return
 ; End of function Sonic_LoadGfx
+Sonic_Peelout:
+		btst	#1,spindash_flag(a0)	; is Peel-Out currently being charged up?
+		bne.s	.charge_peelout		; if yes, branch to a different code section
+
+		; Peel-Out init check
+		btst	#bitUp,(v_jpadhold2).w ; is the Up button held?
+		beq.s	.nopeel			; if not, branch
+		moveq	#btnABC,d0		; are buttons ABC...
+		and.b	(v_jpadpress2).w,d0	; ...pressed?
+		beq.s	.nopeel			; if not, branch
+		cmpi.b	#id_LookUp,obAnim(a0)	; is Sonic in his looking-up animation?
+		bne.s	.nopeel			; if not, branch
+		bset	#1,spindash_flag(a0)	; set Peel-Out flag
+		clr.b	obAnim(a0)		; reset Sonic's animation
+		bclr	#5,obStatus(a0)		; clear pushing flag
+		addq.l	#4,sp			; skip rest in MdNormal
+		move.w	#sfx_PeelCharge,d0	; play Peel-Out charge sound
+		jmp	(QueueSound2).l		; play sound
+.nopeel:
+		rts
+; ===========================================================================
+
+.charge_peelout:
+		btst	#bitUp,(v_jpadhold2).w	; is the Up button STILL held?
+		beq.s	.release_peelout	; if not, release Peel-Out
+
+		addi.w	#100,obInertia(a0)	; add 100 charge to Peel-Out speed per frame
+		move.w	(v_sonspeedmax).w,d0	; get Sonic's current max speed
+		add.w	d0,d0			; double it
+		cmpi.w	#$1000,d0		; did it exceed $1000? (can only happen with shoes)
+		ble.s	.nosafety		; if not, branch
+		move.w	#$1000,d0		; make sure speed never exceeds $1000 for safety
+.nosafety:
+		cmp.w	obInertia(a0),d0	; did charge speed exceed maximum?
+		bge.s	.nocap			; if not, branch
+		move.w	d0,obInertia(a0)	; cap max speed
+.nocap: 
+		bsr.w	Sonic_LevelBound	; keep checking for level boundaries
+		bsr.w	Sonic_AnglePos		; make sure Sonic uses the correct angled sprites on a slope
+		move.w	#$60,(v_lookshift).w	; reset looking up/down
+		bclr	#5,obStatus(a0)		; keep pushing flag cleared
+		addq.l	#4,sp			; skip rest in MdNormal
+		rts				; don't do anything else
+; ===========================================================================
+
+.release_peelout:
+		cmpi.w	#$600,obInertia(a0)	; was minimum speed reached?
+		bge.s	.speedok		; if yes, branch
+		clr.w	obInertia(a0)		; kill whatever little speed we've built up
+		bclr	#1,spindash_flag(a0)	; reset Peel-Out flag
+		rts				; don't do anything else
+.speedok:
+		btst	#0,obStatus(a0)		; is Sonic looking to the left?
+		beq.s	.notleft		; if not, branch
+		neg.w	obInertia(a0)		; negate final speed
+.notleft:
+		bclr	#1,spindash_flag(a0)	; reset Peel-Out flag
+		move.w	#sfx_PeelRelease,d0	; play Peel-Out release sound
+		jmp	(QueueSound2).l		; play it
+; End of function Sonic_Peelout
 ; ===========================================================================
 ; ---------------------------------------------------------------------------
 ; Subroutine to charge and release a Spin Dash

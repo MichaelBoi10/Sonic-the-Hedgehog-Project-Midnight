@@ -1,7 +1,7 @@
 {
     "Flex": 2,
     "name": "Sonic 1",
-    "node": "dd2839bc-94ec-493e-bf08-a51f4897ec2c",
+    "node": "da472ab9-f363-45e6-8ee3-a83fd70d6d9c",
     "objects": [
         {
             "name": "Common",
@@ -35,11 +35,11 @@
                     "name": "Sonic",
                     "palettes": [
                         {
-                            "path": "palette/Sonic.bin",
+                            "path": "..\\..\\..\\Downloads\\S2 PORTING\\s2disasm-master\\art\\palettes\\SonicAndTails.bin",
                             "length": 1
                         }
                     ],
-                    "format": "Sonic 1.js",
+                    "format": "Sonic 2.js",
                     "art": {
                         "path": "artunc/Sonic.bin",
                         "compression": "Uncompressed",
@@ -66,8 +66,8 @@
                     ],
                     "format": "Sonic 1.js",
                     "art": {
-                        "path": "artnem/Signpost.nem",
-                        "compression": "Nemesis",
+                        "path": "",
+                        "compression": "Uncompressed",
                         "offset": 0
                     },
                     "mappings": {
@@ -308,7 +308,7 @@
                 }
             ],
             "isDirectory": true,
-            "expanded": false,
+            "expanded": true,
             "uuid": "14da472a-b9f3-4355-a6ce-e3a83fd70d6d"
         },
         {

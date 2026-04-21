@@ -62,10 +62,13 @@ Pow_ChkSonic:
 		bne.s	Pow_ChkShoes
 
 ExtraLife:
-		addq.b	#1,(v_lives).w	; add 1 to the number of lives you have
-		addq.b	#1,(f_lifecount).w ; update the lives counter
-		move.w	#bgm_ExtraLife,d0
-		jmp	(QueueSound1).l	; play extra life music
+        cmpi.b  #99,(v_lives).w    ; does Sonic have 99 or more lives? <----------------
+        bhs.s   .playlifesnd    ; if yes, branch <----------------
+        addq.b  #1,(v_lives).w    ; add 1 to the number of lives you have
+        addq.b  #1,(f_lifecount).w ; update the lives counter
+.playlifesnd: ; <----------------
+        move.w  #bgm_ExtraLife,d0
+        jmp     (QueueSound1).l    ; play extra life music
 ; ===========================================================================
 
 Pow_ChkShoes:
@@ -124,11 +127,16 @@ Pow_ChkRings:
 		bne.s	Pow_ChkS
 
 		addi.w	#10,(v_rings).w	; add 10 rings to the number of rings you have
+		cmpi.w  #999,(v_rings).w    ; does Sonic have 999 or more rings?
+        blo.s   .updaterings
+        move.w  #999,(v_rings).w    ; cap your rings to 999
+.updaterings:
 		ori.b	#1,(f_ringcount).w ; update the ring counter
 		cmpi.w	#100,(v_rings).w ; check if you have 100 rings
-		blo.s	Pow_RingSound
-		bset	#1,(v_lifecount).w
+		cmpi.b  #99,(v_lives).w    ; does Sonic have 99 or more lives?
+        bhs.s   Pow_RingSound    ; if yes, branch
 		beq.w	ExtraLife
+		bset	#1,(v_lifecount).w
 		cmpi.w	#200,(v_rings).w ; check if you have 200 rings
 		blo.s	Pow_RingSound
 		bset	#2,(v_lifecount).w
@@ -141,20 +149,38 @@ Pow_RingSound:
 
 Pow_ChkS:
 		cmpi.b	#7,d0		; does monitor contain 'S'?
-		bne.s	Pow_ChkGoggles
+		bne.s	Pow_ChkEnd
 		nop
 
 Pow_ChkGoggles:
-; Uncomment these lines to set up the goggles monitor to work with it
-	;	cmpi.b	#8,d0		; does monitor contain goggles?
-	;	bne.s	Pow_ChkEnd
-	;	nop
+		cmpi.b	#8,d0		; does monitor contain goggles?
+		bne.w	Pow_ChkSonic
+		jmp	Obj2E_Types
+		andi.b  #7,d0
+		subq.b  #1,d0
+		andi.b  #7,d0
+		tst.b	d0
+		bne.s	+
++
+	moveq	#0,d0
+	add.w	d0,d0
+	move.w	Obj2E_Types(pc,d0.w),d0
+	jmp	Obj2E_Types(pc,d0.w)
 
 Pow_ChkEnd:
 		rts		; 'S' and goggles monitors do nothing
 ; ===========================================================================
-
 Pow_Delete:	; Routine 4
 		subq.w	#1,obTimeFrame(a0)
 		bmi.w	DeleteObject	; delete after half a second
 		rts
+Obj2E_Types:
+		dc.w Pow_ChkEggman	; 0 - Static
+		dc.w Pow_ChkSonic		; 1 - Sonic 1-up
+		dc.w Pow_ChkSonic		; 2 - Tails 1-up
+		dc.w Pow_ChkEggman	; 3 - Robotnik
+		dc.w Pow_ChkRings		; 4 - Super Ring
+		dc.w Pow_ChkShoes		; 5 - Speed Shoes
+		dc.w Pow_ChkShield	; 6 - Shield
+		dc.w Pow_ChkInvinc	; 7 - Invincibility
+		

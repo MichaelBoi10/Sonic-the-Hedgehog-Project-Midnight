@@ -138,6 +138,7 @@ ob2ndRout:	equ $25	; secondary routine number
 obSolid:	equ ob2ndRout ; solid status flag
 obAngle:	equ $26	; angle
 obSubtype:	equ $28	; object subtype
+obParent:				equ $3E				; 2 bytes | parent address
 
 ; Object variables used by Sonic
 flashtime:	equ $30	; time between flashes after getting hit (2 bytes)

@@ -84,6 +84,8 @@ sfx_Spring =			SMPS_id(ptr_sndCC)
 sfx_Switch =			SMPS_id(ptr_sndCD)
 sfx_RingLeft =			SMPS_id(ptr_sndCE)
 sfx_Signpost =			SMPS_id(ptr_sndCF)
+sfx_PeelCharge = SMPS_id(ptr_sndD2)
+sfx_PeelRelease = SMPS_id(ptr_sndD3)
 sfx__End =			SMPS_id(ptr_sndend)-1
 
 ; Special sound effects

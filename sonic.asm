@@ -6012,6 +6012,7 @@ Map_Bump:	include	"_maps/Bumper.asm"
 		include	"_incObj/0D Signpost.asm" ; includes "GotThroughAct" subroutine
 		include	"_anim/Signpost.asm"
 Map_Sign:	include	"_maps/Signpost.asm"
+DPLC_Sign:    include    "_maps\Signpost_DPLC.asm"
 
 		include	"_incObj/4C & 4D Lava Geyser Maker.asm"
 		include	"_incObj/4E Wall of Lava.asm"
@@ -7389,7 +7390,7 @@ loc_1B730:
 SS_MapIndex:
 		include	"_inc/Special Stage Mappings & VRAM Pointers.asm"
 SS_MapIndex_End:
-
+		
 Map_SS_R:	include	"_maps/SS R Block.asm"
 Map_SS_Glass:	include	"_maps/SS Glass Block.asm"
 Map_SS_Up:	include	"_maps/SS UP Block.asm"
@@ -7401,7 +7402,8 @@ Map_SS_Down:	include	"_maps/SS DOWN Block.asm"
 		include	"_incObj/10.asm"
 
 		include	"_inc/AnimateLevelGfx.asm"
-
+		
+		
 		include	"_incObj/21 HUD.asm"
 Map_HUD:	include	"_maps/HUD.asm"
 
@@ -7800,8 +7802,8 @@ Nem_HSpring:	binclude	"artnem/Spring Horizontal.nem"
 		even
 Nem_VSpring:	binclude	"artnem/Spring Vertical.nem"
 		even
-Nem_SignPost:	binclude	"artnem/Signpost.nem"	; end of level signpost
-		even
+Art_SignPost:    binclude    "artunc\Signpost.bin"    ; Sonic level signpost
+        even
 Nem_Lamp:	binclude	"artnem/Lamppost.nem"
 		even
 Nem_BigFlash:	binclude	"artnem/Giant Ring Flash.nem"
